@@ -1,39 +1,44 @@
 <!doctype html>
-<html class="no-js" lang="">
+<!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="{{ shop.locale }}">
+<!--<![endif]-->
 
 <head>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="">
-
-
-
-<!-- 
-  {%- if canonical_url != blank -%}
+  <meta name="theme-color" content="{{ settings.color_button }}">
   <link rel="canonical" href="{{ canonical_url }}">
-  {%- endif -%} -->
+  
+  
+
+  {{ 'boostrap.min.css' | asset_url | stylesheet_tag }}
+  {{ 'application.css.scss' | asset_url | stylesheet_tag }}
+ 
 
 
   {{ content_for_header }}
 
-  <link rel="preload" href="{{ 'bootstrap.min.css' | asset_url }}" as="style">
-  <link rel="preload" href="{{ 'application.css.scss' | asset_url }}" as="style">
-
-
 </head>
 
-<body>
 
-  <main role="main">
+
+{% section 'header' %}
+
+<div class="page-container" id="PageContainer">
+
+  <main class="main-content {% if template == " cart" %}main-content--cart{% endif %}" id="MainContent" role="main">
 
     {{ content_for_layout }}
 
   </main>
 
+  {% section 'footer' %}
 
-  <link rel="preload" href="{{ 'bootstrap.min.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'application.js' | asset_url }}" as="script">
+</div>
+
 
 
 </body>
