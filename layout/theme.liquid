@@ -1,4 +1,5 @@
 <!doctype html>
+
 <head>
   <title>{{ page_title }}</title>
   <meta charset="utf-8">
@@ -6,19 +7,35 @@
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ canonical_url }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  {{ content_for_header }} <!-- Header hook for plugins -->
+
+  {{ content_for_header }}
+  <!-- Header hook for plugins -->
+
   {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+
   {{ 'application.css.scss' | asset_url | stylesheet_tag }}
-  {{ 'font-styles.css' | asset_url | stylesheet_tag }}
+
+  <!-- {{ 'font-styles.css' | asset_url | stylesheet_tag }} -->
+
 </head>
+
 <body>
-  {% section 'translation' %}
-  {% section 'header' %}
+  <!-- {% section 'translation' %} -->
+  {%- section 'header' -%}
+
+
+
+
 
   <main role="main">
     {{ content_for_layout }}
   </main>
-  
-  {% section 'footer-section' %}
+
+{{'bootstrap.min.js' | asset_url | script_tag}}
+{{'application.js' | asset_url | script_tag}}
+
+
+  <!-- {% section 'footer-section' %} -->
 </body>
+
 </html>
