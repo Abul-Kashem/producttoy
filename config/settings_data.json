@@ -1,7 +1,28 @@
 {
-    "current": "Default",
-    "presets": {
-      "Default": { }
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "16542478305fbf903a": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/slideshow-1.jpg",
+          "title": "Example Heading",
+          "description": "<p>Example Paragraph<\/p>",
+          "button_label": "Button",
+          "button_link": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "16542478305fbf903a"
+    ]
+  },
+  "presets": {
+    "Default": {
     }
+  }
 }
-  
