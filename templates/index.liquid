@@ -1,1 +1,33 @@
-{{ content_for_index }}
+{%- for product in collections.all.products -%}
+    {%- unless product.handle == current_product.handle -%}
+
+        {%- if product.tags contains section.settings.related_tag -%}
+            <a href="{{ product.url | within: collection }}" class="product-card">
+                <img src="{{ product.featured_image.src | img_url: '1024x' }}" alt="">
+                {{ product.title }}
+                <p>
+                    <span aria-hidden="true">—</span>
+                    {%- if product.price_varies -%}
+                        <span class="visuallyhidden">Starting at</span>
+                        {{ product.price_min | money_without_trailing_zeros }}
+                        <span aria-hidden="true">+</span>
+                    {%- else -%}
+                        {{ product.price | money_without_trailing_zeros }}
+                    {%- endif -%}
+                </p>
+                <p>
+                    <span class="visuallyhidden">by</span>
+                    {{ product.vendor }}
+                </p>
+            </a>
+
+            {%- assign counter = counter | plus: 1 -%}
+
+            {%- if counter == break_at -%}
+                {%- break -%}
+            {%- endif -%}
+
+        {%- endif -%}
+
+    {%- endunless -%}
+{%- endfor -%}
