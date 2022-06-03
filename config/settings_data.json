@@ -15,10 +15,18 @@
           "button_label": "Button",
           "button_link": ""
         }
+      },
+      "165425406916cf00d3": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_collection": "frontpage",
+          "title": "Featured Collection"
+        }
       }
     },
     "content_for_index": [
-      "16542478305fbf903a"
+      "16542478305fbf903a",
+      "165425406916cf00d3"
     ]
   },
   "presets": {
