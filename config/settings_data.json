@@ -22,6 +22,12 @@
           "featured_collection": "frontpage",
           "title": "Featured Collection"
         }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "dynamic_button_checkbox": true
+        }
       }
     },
     "content_for_index": [
