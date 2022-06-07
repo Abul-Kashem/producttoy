@@ -1,0 +1,54 @@
+{% if paginate.pages > 1 %}
+
+
+    <nav aria-label="...">
+        <ul class="pagination justify-content-center">
+
+
+            {%- if paginate.previous.is_link -%}
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginate.previous.url }}">{{ paginate.previous.title }}</a>
+                </li>
+            {%- else -%}
+                <li class="page-item disabled">
+                    <!-- <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&larr;</a> -->
+                </li>
+            {%- endif -%}
+
+
+            {%- for part in paginate.parts -%}
+                {%- if part.is_link -%}
+                    <li class="page-items">
+                        <a class="page-link" href="{{ part.url }}">{{ part.title }}</a>
+                    </li>
+                {%- else -%}
+
+                    {%- if part.title == paginate.current_page -%}
+                        <li class="page-item active">
+                            <a class="page-link" href="{{ part.url }}">
+                                <span class="sr-only">{{ part.title }}</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <a class="page-link" href="{{ part.url }}">{{ part.title }}</a>
+                    {%- endif -%}
+
+                {%- endif -%}
+            {%- endfor -%}
+
+
+            {%- if paginate.next.is_link -%}
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginate.next.url }}">{{ paginate.next.title }}</a>
+                </li>
+            {%- else -%}
+                <li class="page-item disabled">
+                    <!-- <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&rarr;</a> -->
+                </li>
+            {%- endif -%}
+
+        </ul>
+    </nav>
+
+
+{% endif %}
