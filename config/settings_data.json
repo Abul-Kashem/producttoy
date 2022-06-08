@@ -35,6 +35,98 @@
           "container": "container-fluid",
           "show_published_date": true
         }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "3b6d5c15-79da-46ea-96ce-82575f030095": {
+            "type": "faq",
+            "settings": {
+              "title": "The Daily Star",
+              "answer": "<p>The Daily Star is the largest circulating daily English-language newspaper in Bangladesh. Founded by Syed Mohammed Ali on 14 January 1991, as Bangladesh transitioned and restored parliamentary democracy, The Daily Star is considered a newspaper of record for Bangladesh<\/p>"
+            }
+          },
+          "5c643074-de82-422e-8f96-3da35d831a6c": {
+            "type": "faq",
+            "settings": {
+              "title": "What is Shopify and how does it work?",
+              "answer": "<p>Shopify is a complete commerce platform that lets you start, grow, and manage a business.<\/p>"
+            }
+          },
+          "f417bb62-fe77-4e2e-8a36-f4308cb0fb61": {
+            "type": "faq",
+            "settings": {
+              "title": "Can I use my own domain name with Shopify?",
+              "answer": "<p>Yes, you can use your own domain name with Shopify.<\/p><p>If you have an existing domain name, you can connect it to Shopify from your store’s admin.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "3b6d5c15-79da-46ea-96ce-82575f030095",
+          "5c643074-de82-422e-8f96-3da35d831a6c",
+          "f417bb62-fe77-4e2e-8a36-f4308cb0fb61"
+        ],
+        "settings": {
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
+        "blocks": {
+          "d1db49a8-712a-423c-83ad-43634de02526": {
+            "type": "image",
+            "settings": {
+              "title": "Polaris includes 16 separate",
+              "image": "shopify:\/\/shop_images\/bride-groom-wedding-ring-vows.jpg",
+              "url": ""
+            }
+          },
+          "ddd77327-3d6c-458e-8db2-12be40a5633e": {
+            "type": "text",
+            "settings": {
+              "title": "Shopify puts a great deal",
+              "description": "<p>Shopify puts a great deal of effort into Polaris and it’s used quite extensively within the Shopify ecosystem, by both internal and external developers, to build UIs with a consistent look and feel.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "d1db49a8-712a-423c-83ad-43634de02526",
+          "ddd77327-3d6c-458e-8db2-12be40a5633e"
+        ],
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "66ced74a-7d75-4e1b-ac05-c9f9637a019c": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "e478d5fb-b3a2-4c22-8c6a-b2e04fc089eb": {
+            "type": "text",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo.png",
+              "title": "",
+              "description": "<p>97-16 84th St #1 , Ozonepark, New York, NY 11416, United State<\/p><p><\/p><p>+8801717656665<\/p><p>support@shopifycoder.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "66ced74a-7d75-4e1b-ac05-c9f9637a019c",
+          "e478d5fb-b3a2-4c22-8c6a-b2e04fc089eb"
+        ],
+        "settings": {
+          "col_num": 3,
+          "enable_payment_type_icon": true
+        }
       }
     },
     "content_for_index": [
