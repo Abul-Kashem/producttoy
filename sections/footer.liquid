@@ -1,0 +1,104 @@
+<footer class="footer-section bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            {%- for block in section.blocks -%}
+                {%- assign item = block.settings -%}
+
+                {%- if block.type == "link_list" -%}
+                    <div class="col">
+                        <h5>{{ item.title }}</h5>
+                        {%- assign footer_linklist = item.menu -%}
+                        <ul class="list-unstyled text-eamil">
+                            {%- for link in linklists[footer_linklist].links -%}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
+
+                    </div>
+
+                {%- else -%}
+
+                    <div class="col">
+                        <img src="{{ item.logo | img_url: 'medium' }}" alt="">
+                        {%- if item.title != blank -%}
+                            <h5>{{ item.title }}</h5>
+                        {%- endif -%}
+                        <p>{{ item.description }}</p>
+                    </div>
+                {%- endif -%}
+
+            {%- endfor -%}
+        </div>
+    </div>
+</footer>
+
+
+{{'bootstrap.min.js' | asset_url | script_tag}}
+{{'application.js' | asset_url | script_tag}}
+
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "range",
+        "id": "col_num",
+        "label": "Number of Columns",
+        "min": 2,
+        "max": 4,
+        "default": 3
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_payment_type_icon",
+        "label": "Enable Payment Type Icon",
+        "default": true
+      }
+    ],
+    "max_blocks": 4,
+    "blocks": [
+      {
+        "type": "link_list",
+        "name": "Navigation",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Quick Links"
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Store Details",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Store Logo"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Store Information"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
