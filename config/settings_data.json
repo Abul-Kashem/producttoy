@@ -117,11 +117,27 @@
               "title": "",
               "description": "<p>97-16 84th St #1 , Ozonepark, New York, NY 11416, United State<\/p><p><\/p><p>+8801717656665<\/p><p>support@shopifycoder.com<\/p>"
             }
+          },
+          "dec5fdd6-99c2-4bc4-bc60-6571b3b30ef8": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "e05a965c-0847-405a-88d3-f2bcc7ce441e": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
           }
         },
         "block_order": [
           "66ced74a-7d75-4e1b-ac05-c9f9637a019c",
-          "e478d5fb-b3a2-4c22-8c6a-b2e04fc089eb"
+          "e478d5fb-b3a2-4c22-8c6a-b2e04fc089eb",
+          "dec5fdd6-99c2-4bc4-bc60-6571b3b30ef8",
+          "e05a965c-0847-405a-88d3-f2bcc7ce441e"
         ],
         "settings": {
           "col_num": 3,
