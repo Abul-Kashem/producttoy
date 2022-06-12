@@ -1,4 +1,4 @@
-<footer class="footer-section bg-light py-5 mt-5">
+<footer class="footer-section bg-light py-5 mt-5 footer-custom-css">
     <div class="container">
         <div class="row">
             {%- for block in section.blocks -%}
@@ -21,7 +21,7 @@
                 {%- else -%}
 
                     <div class="col">
-                        <img src="{{ item.logo | img_url: 'medium' }}" alt="">
+                        <img src="{{ item.logo | img_url: 'medium' }}" alt="{{ section.settings.image.alt }}">
                         {%- if item.title != blank -%}
                             <h5>{{ item.title }}</h5>
                         {%- endif -%}

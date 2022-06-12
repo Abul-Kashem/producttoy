@@ -20,3 +20,8 @@ html, body{
     object-position: top;
     z-index: -1;
 }
+
+.custom-header-css,
+.footer-custom-css{
+    background-color: #F1F1F1 !important;
+}
