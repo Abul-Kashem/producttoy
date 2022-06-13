@@ -31,28 +31,32 @@
                 </li>
             </ul>
 
+
+            <ul class="navbar-nav">
+
+                {% if shop.customer_accounts_enabled %}
+                    {% if customer %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ routes.account_url }}">{{ 'general.Layout.account_text' | t }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ routes.account_logout_url }}">{{ 'general.Layout.logout_text' | t }}</a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ routes.account_login_url }}">{{ 'general.Layout.login_text' | t }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ routes.account_register_url }}">{{ 'general.Layout.register_text' | t }}</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+
+
             <form action="/search" method="get" role="search">
                 <input type="text" name="q" value="{{ search.terms | escape }}" id="">
             </form>
         </div>
     </div>
 </nav>
-
-
-{% if shop.customer_accounts_enabled %}
-    {% if customer %}
-        <li class="nav-item">
-            <a class="nav-link" href="{{ routes.account_url }}">{{ 'general.Layout.account_text' | t }}</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ routes.account_logout_url }}">{{ 'general.Layout.logout_text' | t }}</a>
-        </li>
-    {% else %}
-        <li class="nav-item">
-            <a class="nav-link" href="{{ routes.account_login_url }}">{{ 'general.Layout.login_text' | t }}</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ routes.account_register_url }}">{{ 'general.Layout.register_text' | t }}</a>
-        </li>
-    {% endif %}
-{% endif %}

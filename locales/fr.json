@@ -6,6 +6,12 @@
         },
         "Cart": {
             "title": "Cart"
+        },
+        "Layout": {
+            "login_text": "Connexion",
+            "register_text": "Sinscrire",
+            "account_text": "Account",
+            "logout_text": "Logout"
         }
     }
 }
