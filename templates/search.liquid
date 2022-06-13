@@ -3,7 +3,7 @@
     <div class="container my-5">
         <div class="row">
             <form action="/search" method="get" role="search">
-                <!-- <input class="form-control mb-4 rounderd-0 form-control-lg" type="search" name="q" value="{{ search.terms | escape }}"> -->
+                <input class="form-control mb-4 rounderd-0 form-control-lg" type="search" name="q" value="{{ search.terms | escape }}">
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="product_type" name="type" type="checkbox" value="product">
@@ -52,20 +52,22 @@
 
                             </div>
                         </div>
+
                     {%- else if item.object_type == 'article' -%}
 
                         <div class="col">
                             <div class="card shadow">
-                                {%- if item.image -%}
+                                {% if item.image %}
                                     <a href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
-                                        {{ item.featured_image.src | img_url: 'medium' | img_tag: item.featured_image.alt, 'card-img-top' }}
+                                        {{ item.image.src | img_url: 'medium' | img_tag: item.image.alt, 'card-img-top' }}
                                     </a>
-                                {%- endif -%}
+                                {% endif %}
 
                                 <div class="card-body">
                                     <h5>{{ item.title | link_to: item.url }}</h5>
                                     <p>{{ item.content | strip_html | truncatewords: 50 }}</p>
                                 </div>
+
                             </div>
                         </div>
 
