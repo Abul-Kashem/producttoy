@@ -6,3 +6,16 @@ if (document.getElementById("sortBy") != null) {
     window.location = url.href;
   });
 }
+
+
+// For Province Loaded 
+
+if(document.getElementById('AddressCountryNew') != null){
+  document.getElementById('AddressCountryNew').addEventListener('change', function(e){
+    province = this.options[this.selectedIndex].getAttribute('data-provinces')
+    provinceSelector = document.getElementById('AddressCountryNew')
+    provinceArray = JSON.parse(province)
+
+    console.log(provinceArray)
+  })
+}
