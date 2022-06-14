@@ -51,10 +51,66 @@
                         <label for="AddressFirstNameNew">First Name</label>
                         <input type="text" name="address[first_name]" id="AddressFirstNameNew" value="{{ form.first_name }}" class="form-control">
                     </div>
+
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressLastNameNew">Last Name</label>
+                        <input type="text" name="address[last_name]" id="AddresLastNameNew" value="{{ form.last_name }}" class="form-control">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressCompanyNew">Company</label>
+                        <input type="text" name="address[company]" id="AddressCompanyNew" value="{{ form.company }}" class="form-control">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressAddress1New">Address</label>
+                        <input type="text" name="address[address1]" id="AddressAddress1New" value="{{ form.address1 }}" class="form-control">
+                    </div>
+
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressAddress2New">Address</label>
+                        <input type="text" name="address[address2]" id="AddressAddress2New" value="{{ form.address2 }}" class="form-control">
+                    </div>
+
+                    <div class="row mb-3">
+
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="AddressCityNew">City</label>
+                            <input type="text" name="address[city]" id="AddressCityNew" value="{{ form.city }}" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="AddressCountryNew">Country</label>
+                            <select class="form-control" id="AddressCountryNew" name="address[country]">{{ all_country_option_tags }}</select>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="AddressProvinceNew">Province</label>
+                            <select class="form-control" disabled id="AddressProvinceNew" name="address[province]"></select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressZipNew">Postal/Zip Code</label>
+                        <input type="text" name="address[zip]" id="AddressZipNew" value="{{ form.zip }}" class="form-control">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="AddressPhoneNew">Phone Number</label>
+                        <input type="text" name="address[phone]" id="AddressZipNew" value="{{ form.phone }}" class="form-control">
+                    </div>
+
+
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                    <button class="btn btn-primary" type="button">Save changes</button>
+                    <!-- <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Save changes</button> -->
+
+                    <button class="btn btn-primary" type="submit">Create Address</button>
                 </div>
             </div>
         </div>
