@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="card-footer">
-                        <form action="/account/addresses/{{ address.id }}">
+                        <form action="/account/addresses/{{ address.id }}" method="post" data-confirm-message="Delete Address">
                             <input name="_method" type="hidden" value="delete">
                             <button class="btn btn-danger">Delete</button>
                         </form>
