@@ -1,7 +1,15 @@
 <div class="container my-5">
-    <h1 class="lead"> My Address</h1>
+    <h1 class="lead text-center">
+        My Address</h1>
 
-    <button class="btn btn-primary rounded-0">Create New Address</button>
+    <button class="btn btn-primary rounded-0"></button>
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+        Create New Address
+    </button>
+
+
     <div class="row row-cols-md-4 row-cols-4 my-5 gx-2">
         {%- for address in customer.addresses -%}
             <div class="col">
