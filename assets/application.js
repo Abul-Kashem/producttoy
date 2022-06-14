@@ -12,7 +12,7 @@ if (document.getElementById("sortBy") != null) {
 if (document.getElementById("AddressCountryNew") != null) {
   document.getElementById("AddressCountryNew").addEventListener("change", function (e) {
     province = this.options[this.selectedIndex].getAttribute("data-provinces");
-    provinceSelector = document.getElementById("AddressProvinceNews");
+    provinceSelector = document.getElementById("AddressProvinceNew");
     provinceArray = JSON.parse(province);
 
     // console.log(provinceArray);
@@ -21,6 +21,7 @@ if (document.getElementById("AddressCountryNew") != null) {
       provinceSelector.setAttribute('disabled', 'disabled')
     } else {
       provinceSelector.removeAttribute('disabled')
+      provinceSelector.removeAttribute('disabled');
     }
 
     provinceSelector.innerHTML = ''
