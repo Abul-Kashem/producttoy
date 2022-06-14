@@ -12,7 +12,7 @@ if (document.getElementById("sortBy") != null) {
 if (document.getElementById("AddressCountryNew") != null) {
   document.getElementById("AddressCountryNew").addEventListener("change", function (e) {
     province = this.options[this.selectedIndex].getAttribute("data-provinces");
-    provinceSelector = document.getElementById("AddressCountryNew");
+    provinceSelector = document.getElementById("AddressProvinceNews");
     provinceArray = JSON.parse(province);
 
     // console.log(provinceArray);
