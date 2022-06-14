@@ -1,8 +1,8 @@
-<div class="container">
-    <h1 class="lead">My Address</h1>
+<div class="container my-5">
+    <h1 class="lead"> My Address</h1>
 
     <button class="btn btn-primary rounded-0">Create New Address</button>
-    <div class="row">
+    <div class="row row-cols-md-4 row-cols-4 my-5 gx-2">
         {%- for address in customer.addresses -%}
             <div class="col">
                 <div class="card">
