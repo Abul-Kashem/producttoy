@@ -36,11 +36,9 @@
                                         <a href="{{ order.customer_url }}">{{ order.name }}</a>
                                     </td>
                                     <td>
-                                        <span class="badge bd-primary">{{ order.fulfillment_status_label }}</span>
-                                        <!-- <span class="badge bg-primary">{{ order.fulfillment_status_label }}</span> -->
+                                        <span class="badge bg-primary">{{ order.fulfillment_status_label }}</span>
                                     </td>
                                     <td>
-                                        <!-- <span class="badge bd-primary">{{ order.financial_status_label }}</span> -->
                                         <span class="badge bg-success">{{ order.financial_status_label }}</span>
                                     </td>
                                     <td>{{ order.created_at | time_tag: format: 'date' }}</td>
