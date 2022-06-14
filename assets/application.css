@@ -25,3 +25,9 @@ html, body{
 .footer-custom-css{
     background-color: #F1F1F1 !important;
 }
+
+.login-form{
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+}

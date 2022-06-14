@@ -1,0 +1,36 @@
+<div class="container py-5 my-5">
+    <div class="login-form">
+
+        {%- form 'customer_login' -%}
+
+            {% include 'form-error', form: form %}
+
+
+            <h3 class="h3">Customer Login</h3>
+            <label for="emailAddress">Email Address</label>
+            <input class="form-control rounded-0 my-2" id="" name="customer[email]" type="email">
+            <label for="password">Password</label>
+            <input class="form-control rounded-0 my-2" id="" name="customer[password]" type="password">
+
+            <input class="btn btn-primary btn-lg w-100 rounded-0" type="submit" value="Sign In">
+        {%- endform -%}
+
+        <a class="text-center" href="#recover" id="forgotPassword">Forgot Your Password?</a>
+
+    </div>
+
+    <div class="forgot-password-form d-none">
+        {%- form 'recover_customer_password' -%}
+
+            {% include 'form-error', form: form %}
+
+            <div class="col-12">
+                <label class="form-label" for="resetPassword">Email Address</label>
+                <input class="form-control" id="resetPassword" name="email" type="email">
+            </div>
+
+            <input class="btn btn-secondarys" type="submit" value="Reset Password">
+            
+        {%- endform -%}
+    </div>
+</div>
