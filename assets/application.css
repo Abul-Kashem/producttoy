@@ -1,8 +1,7 @@
-html, body{
+html,
+body {}
 
-}
-
-.inner-hero-section{
+.inner-hero-section {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -10,7 +9,7 @@ html, body{
 }
 
 .inner-hero-section img,
-.inner-hero-section svg{
+.inner-hero-section svg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -22,11 +21,12 @@ html, body{
 }
 
 .custom-header-css,
-.footer-custom-css{
+.footer-custom-css {
     background-color: #F1F1F1 !important;
 }
 
-.login-form{
+.login-form,
+.registration-form {
     width: 100%;
     max-width: 330px;
     margin: 0 auto;
