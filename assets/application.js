@@ -27,7 +27,7 @@ if (document.getElementById("AddressCountryNew") != null) {
     options = ''
     for (let index = 0; index < provinceArray.length; index++) {
 
-      options += '<option value="' + provinceArray[index][0] + '">' + provinceArray[i][0] + '</option>'
+      options += '<option value="' + provinceArray[index][0] + '">' + provinceArray[index][0] + '</option>'
 
     }
 
