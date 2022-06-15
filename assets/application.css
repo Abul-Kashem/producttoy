@@ -57,7 +57,7 @@ body {}
 
 .localeBtn {
     background-color: #3298DB;
-    color:#fff;
+    color: #fff;
     padding: 6px;
     font-size: 20px;
     position: fixed;
@@ -103,17 +103,11 @@ body {}
 
 .featured-collection-section .card {
     z-index: -1;
+    position: initial;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    z-index: -10;
+.zindex-clear a {
+
+    position: initial;
+    z-index: -1;
 }
