@@ -106,8 +106,7 @@ body {}
     position: initial;
 }
 
-.zindex-clear a {
-
+.card{
     position: initial;
     z-index: -1;
 }
