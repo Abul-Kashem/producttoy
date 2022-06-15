@@ -27,7 +27,8 @@ body {}
 
 .login-form,
 .registration-form,
-.activate-acount-form {
+.activate-acount-form,
+.forgot-password-form {
     width: 100%;
     max-width: 330px;
     margin: 0 auto;

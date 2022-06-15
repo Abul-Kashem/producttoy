@@ -10,7 +10,7 @@
 
             <label for="emailAddress">Email Address</label>
             <input class="form-control rounded-0 my-2" id="" name="customer[email]" type="email">
-            
+
             <label for="password">Password</label>
             <input class="form-control rounded-0 my-2" id="" name="customer[password]" type="password">
 
@@ -21,15 +21,13 @@
 
     </div>
 
-    <div id="forgotPasswordForm" class="forgot-password-form d-none">
+    <div class="forgot-password-form d-none" id="forgotPasswordForm">
         {%- form 'recover_customer_password' -%}
 
             {% include 'form-error', form: form %}
 
-            <div class="col-12">
-                <label class="form-label" for="resetPassword">Email Address</label>
-                <input class="form-control" id="resetPassword" name="email" type="email">
-            </div>
+            <label class="form-label" for="resetPassword">Email Address</label>
+            <input class="form-control" id="resetPassword" name="email" type="email">
 
             <input class="btn btn-secondary" type="submit" value="Reset Password">
 
