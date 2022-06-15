@@ -43,6 +43,14 @@ if (document.getElementById("AddressCountryNew") != null) {
 
 if (document.getElementById('forgotPassword') != null) {
   document.getElementById('forgotPassword').addEventListener('click', function (e) {
-    console.log('I am clicked')
+    // console.log('I am clicked')
+
+    const element = document.querySelector('#forgotPasswordForm')
+
+    if (element.classList.contains('d-none')) {
+      element.classList.remove('d-none')
+      element.classList.add('d-block')
+    }
+
   })
 }
