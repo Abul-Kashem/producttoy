@@ -1,0 +1,17 @@
+{
+    "general": {
+      "404": {
+        "title": "",
+        "subtext_html": ""
+      },
+      "Cart": {
+        "title": ""
+      },
+      "Layout": {
+        "login_text": "",
+        "register_text": "",
+        "account_text": "",
+        "logout_text": ""
+      }
+    }
+  }
