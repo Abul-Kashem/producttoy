@@ -1,8 +1,8 @@
 {
     "general": {
       "404": {
-        "title": "",
-        "subtext_html": ""
+        "title": "Nicht gefunden",
+        "subtext_html": "Die gesuchte Seite existiert nicht"
       },
       "Cart": {
         "title": "Wagen"

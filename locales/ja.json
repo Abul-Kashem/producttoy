@@ -1,8 +1,8 @@
 {
     "general": {
       "404": {
-        "title": "",
-        "subtext_html": ""
+        "title": "見つかりません",
+        "subtext_html": "お探しのページがありません"
       },
       "Cart": {
         "title": "カート"
