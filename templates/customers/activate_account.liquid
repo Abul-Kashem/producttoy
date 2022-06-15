@@ -2,17 +2,19 @@
     <div class="row">
 
         <div class="activate-acount-form">
-            <h1 class="lead">Active Account</h1>
 
             {%-  form 'activate_customer_password' -%}
 
                 {% include 'form-error', form: form %}
 
-                <label class="form-label" for="activate_password1">Password</label>
-                <input id="activate_password1" name="customer[password]" type="password">
+                <h3 class="h3">Active Account</h3>
 
-                <label class="form-label" for="activate_password2">Password Confirmation</label>
-                <input id="activate_password2" name="customer[password_confirmation]" type="password">
+
+                <label for="activate_password1">Password</label>
+                <input id="activate_password1" name="customer[password]" type="password" class="form-control">
+
+                <label for="activate_password2">Password Confirmation</label>
+                <input id="activate_password2" name="customer[password_confirmation]" type="password" class="form-control">
 
                 <button class="btn btn-primary w-100 rounded-0" type="submit">Activate Account</button>
 
