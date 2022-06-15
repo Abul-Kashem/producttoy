@@ -20,6 +20,11 @@ body {}
     z-index: -1;
 }
 
+.hero-content h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
 .custom-header-css,
 .footer-custom-css {
     background-color: #F1F1F1 !important;
