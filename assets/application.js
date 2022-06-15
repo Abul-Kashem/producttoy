@@ -37,3 +37,12 @@ if (document.getElementById("AddressCountryNew") != null) {
 
   });
 }
+
+
+// For Reset Password
+
+if (document.getElementById('forgotPassword') != null) {
+  document.getElementById('forgotPassword').addEventListener('click', function (e) {
+    console.log('I am clicked')
+  })
+}
