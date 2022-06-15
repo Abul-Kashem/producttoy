@@ -5,13 +5,13 @@
         "subtext_html": ""
       },
       "Cart": {
-        "title": ""
+        "title": "カート"
       },
       "Layout": {
-        "login_text": "",
-        "register_text": "",
-        "account_text": "",
-        "logout_text": ""
+        "login_text": "ログイン",
+        "register_text": "登録",
+        "account_text": "アカウント",
+        "logout_text": "ログアウト"
       }
     }
   }

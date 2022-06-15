@@ -5,13 +5,13 @@
         "subtext_html": ""
       },
       "Cart": {
-        "title": ""
+        "title": "Wagen"
       },
       "Layout": {
-        "login_text": "",
-        "register_text": "",
-        "account_text": "",
-        "logout_text": ""
+        "login_text": "Anmeldung",
+        "register_text": "Registrieren",
+        "account_text": "Konto",
+        "logout_text": "Ausloggen"
       }
     }
   }
