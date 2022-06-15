@@ -1,0 +1,13 @@
+{%- form -%}
+    <div class="local-btn">
+        Translation
+    </div>
+
+    <div class="dropup-content">
+        {%- for locale in shop.published_locales -%}
+            <a href="#" id="localeItem" lang="{{ locale.iso_code }}">
+                {{ locale.endonym_name }}
+            </a>
+        {%- endfor -%}
+    </div>
+{%- endform -%}
