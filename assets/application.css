@@ -55,7 +55,7 @@ body {}
     display: inline-block;
 }
 
-.locale-btn {
+.localeBtn {
     background-color: #3298DB;
     color:#fff;
     padding: 6px;
@@ -69,8 +69,7 @@ body {}
     box-shadow: -1px 0px 20px 0px #00000066;
 }
 
-
-.locale-btn img {
+.localeBtn img {
     width: 50px;
     height: 50px;
 }
@@ -105,4 +104,3 @@ body {}
 .featured-collection-section .card {
     z-index: -1;
 }
-
