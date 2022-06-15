@@ -1,31 +1,24 @@
 <div class="container my-5">
-    <h1 class="lead">Active Account</h1>
     <div class="row">
 
         <div class="activate-acount-form">
+            <h1 class="lead">Active Account</h1>
+
             {%-  form 'activate_customer_password' -%}
 
                 {% include 'form-error', form: form %}
 
-                <div class="col-12">
-                    <label class="form-label" for="activate_password1">Password</label>
-                    <input id="activate_password1" name="customer[password]" type="password">
-                </div>
+                <label class="form-label" for="activate_password1">Password</label>
+                <input id="activate_password1" name="customer[password]" type="password">
 
-                <div class="col-12">
-                    <label class="form-label" for="activate_password2">Password Confirmation</label>
-                    <input id="activate_password2" name="customer[password_confirmation]" type="password">
-                </div>
+                <label class="form-label" for="activate_password2">Password Confirmation</label>
+                <input id="activate_password2" name="customer[password_confirmation]" type="password">
 
-                <div class="col-12">
-                    <button class="btn btn-primary w-100 rounded-0" type="submit">Activate Account</button>
-                </div>
+                <button class="btn btn-primary w-100 rounded-0" type="submit">Activate Account</button>
 
                 <p class="text-center">or</p>
 
-                <div class="col-12">
-                    <input class="btn btn-primary w-100 rounded-0" name="decline" type="submit" value="Decline Invitation">
-                </div>
+                <input class="btn btn-primary w-100 rounded-0" name="decline" type="submit" value="Decline Invitation">
 
             {%- endform -%}
         </div>
