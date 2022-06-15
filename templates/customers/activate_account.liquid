@@ -1,29 +1,34 @@
 <div class="container my-5">
     <h1 class="lead">Active Account</h1>
     <div class="row">
-        {%-  form 'activate_customer_password' -%}
-            {% include 'form-error', form: form %}
 
-            <div class="col-12">
-                <label for="activate_password1" class="form-label">Password</label>
-                <input type="password" name="customer[password]" id="activate_password1">
-            </div>
+        <div class="activate-acount-form">
+            {%-  form 'activate_customer_password' -%}
 
-            <div class="col-12">
-                <label for="activate_password2" class="form-label">Password Confirmation</label>
-                <input type="password" name="customer[password_confirmation]" id="activate_password2">
-            </div>
+                {% include 'form-error', form: form %}
 
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary w-100 rounded-0">Activate Account</button>
-            </div>
-        
-            <p class="text-center">or</p>
+                <div class="col-12">
+                    <label class="form-label" for="activate_password1">Password</label>
+                    <input id="activate_password1" name="customer[password]" type="password">
+                </div>
 
-            <div class="col-12">
-                <input type="submit" name="decline" class="btn btn-primary w-100 rounded-0" value="Decline Invitation">
-            </div>
+                <div class="col-12">
+                    <label class="form-label" for="activate_password2">Password Confirmation</label>
+                    <input id="activate_password2" name="customer[password_confirmation]" type="password">
+                </div>
 
-        {%- endform -%}
+                <div class="col-12">
+                    <button class="btn btn-primary w-100 rounded-0" type="submit">Activate Account</button>
+                </div>
+
+                <p class="text-center">or</p>
+
+                <div class="col-12">
+                    <input class="btn btn-primary w-100 rounded-0" name="decline" type="submit" value="Decline Invitation">
+                </div>
+
+            {%- endform -%}
+        </div>
+
     </div>
 </div>
