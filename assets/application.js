@@ -55,7 +55,10 @@ if (document.getElementById('forgotPassword') != null) {
   })
 }
 
+// For Translation
+
 var localeItems = document.querySelectorAll("#localeItem");
+
 if (localeItems.length > 0) {
   localeItems.forEach(item => {
     item.addEventListener("click", event => {
