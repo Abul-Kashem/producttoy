@@ -57,7 +57,7 @@ if (document.getElementById('forgotPassword') != null) {
 
 // For Translation
 
-var localeItems = document.querySelectorAll("#localeItem");
+var localeItems = document.querySelectorAll("#localeItem");s
 
 if (localeItems.length > 0) {
   localeItems.forEach(item => {
