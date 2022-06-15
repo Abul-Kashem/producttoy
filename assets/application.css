@@ -105,3 +105,9 @@ body {}
 .featured-collection-section .card {
     z-index: -1;
 }
+
+.card {
+
+    z-index: -1;
+
+}
