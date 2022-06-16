@@ -76,7 +76,7 @@ if (localeItems.length > 0) {
 
 productInforAnchors = document.querySelectorAll("#productInforAnchor");
 
-productModal;
+productModal = '';
 
 if (document.getElementById("productInfoModal") != null) {
   productModal = new bootstrap.Modal(
