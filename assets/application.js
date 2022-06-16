@@ -74,9 +74,9 @@ if (localeItems.length > 0) {
 
 // For Product API Modal
 
-productInforAnchors = document.querySelectorAll("#productInforAnchor");
+productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
 
-productModal = '';
+productModal = "";
 
 if (document.getElementById("productInfoModal") != null) {
   productModal = new bootstrap.Modal(
@@ -84,3 +84,13 @@ if (document.getElementById("productInfoModal") != null) {
     {}
   );
 }
+
+
+if (productInfoAnchor.length > 0) {
+  productInfoAnchor.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      console.log("I clicked this image");
+      productModal.show();
+    });
+  });
+} 
