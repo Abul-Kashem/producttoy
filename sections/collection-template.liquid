@@ -3,32 +3,32 @@
 {% endcomment %}
 {%- comment -%}
     {% paginate collection.products by section.settings.pagination %}
-                    <h1>{{ collection.title }}</h1>
-                   
-                   
-                    {% for product in collection.products %}
-                        <div>
-                            <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-                            {{ product.price | money }}
-                            {% unless product.available %}<br/><strong>sold out</strong>
-                            {% endunless %}
-                            <a href="{{ product.url | within: collection }}">
-                                <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}"/>
-                            </a>
-                        </div>
-                    {% else %}
-                        <p>no matches</p>
-                    {% endfor %}
-            
-            
-            
-                    {% if paginate.pages > 1 %}
-                        {{ paginate | default_pagination }}
-                    {% endif %}
-                {% endpaginate %}
+                        <h1>{{ collection.title }}</h1>
+                       
+                       
+                        {% for product in collection.products %}
+                            <div>
+                                <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+                                {{ product.price | money }}
+                                {% unless product.available %}<br/><strong>sold out</strong>
+                                {% endunless %}
+                                <a href="{{ product.url | within: collection }}">
+                                    <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}"/>
+                                </a>
+                            </div>
+                        {% else %}
+                            <p>no matches</p>
+                        {% endfor %}
                 
                 
-                {% schema %}
+                
+                        {% if paginate.pages > 1 %}
+                            {{ paginate | default_pagination }}
+                        {% endif %}
+                    {% endpaginate %}
+                    
+                    
+                    {% schema %}
     
     {
         "name": "Collection Template",
@@ -57,7 +57,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <select id="sortBy" name="sorting" class="form-select form-select-sm w-25">
+            <select class="form-select form-select-sm w-25" id="sortBy" name="sorting">
                 {%- for option in collection.sort_options -%}
                     <option value="{{ option.value }}" {%- if option.value == collection.sort_by -%} selected {%- endif -%}>
                         {{ option.name }}
@@ -74,7 +74,7 @@
                 <div class="col-3 g-2">
                     <div class="card">
                         {%- if image != blank -%}
-                            <a href="{{ product.url }}" id="productInforAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | money_without_trailing_zeros }}">
+                            <a href="" id="productInforAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | money_without_trailing_zeros }}">
                                 <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
                             </a>
                         {%- else -%}
@@ -105,3 +105,28 @@
 
 
 </div>
+
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-primary" type="button">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div> 
