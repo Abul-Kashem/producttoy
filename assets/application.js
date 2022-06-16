@@ -80,6 +80,7 @@ productModal;
 
 if (document.getElementById("productInfoModal") != null) {
   productModal = new bootstrap.Modal(
-    document.getElementById("productInfoModal")
+    document.getElementById("productInfoModal"),
+    {}
   );
 }
