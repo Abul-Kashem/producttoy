@@ -74,23 +74,23 @@ if (localeItems.length > 0) {
 
 // For Product API Modal
 
-productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
+// var productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
 
-productModal = "";
+// var productModal = "";
 
-if (document.getElementById("productInfoModal") != null) {
-  productModal = new bootstrap.Modal(
-    document.getElementById("productInfoModal"),
-    {}
-  );
-}
+// if (document.getElementById("productInfoModal") != null) {
+//   productModal = new bootstrap.Modal(
+//     document.getElementById("productInfoModal"),
+//     {}
+//   );
+// }
 
 
-if (productInfoAnchor.length > 0) {
-  productInfoAnchor.forEach((item) => {
-    item.addEventListener("click", (event) => {
-      console.log("I clicked this image");
-      productModal.show();
-    });
-  });
-} 
+// if (productInfoAnchor.length > 0) {
+//   productInfoAnchor.forEach((item) => {
+//     item.addEventListener("click", (event) => {
+//       console.log("I clicked this image");
+//       productModal.show();
+//     });
+//   });
+// } 
