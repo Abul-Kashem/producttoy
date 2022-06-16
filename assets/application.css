@@ -111,6 +111,10 @@ body {}
     z-index: -1;
 }
 
+.card a{
+    text-decoration: none;
+}
+
 .navbar-brand {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
