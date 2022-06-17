@@ -74,13 +74,4 @@ if (localeItems.length > 0) {
 
 // For Product API Modal
 
-var productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
 
-if (productInfoAnchor.length > 0) {
-  productInfoAnchor.forEach((item) => {
-    item.addEventListener("click", (event) => {
-      console.log("I clicked this image");
-      productModal.show();
-    });
-  });
-} 
