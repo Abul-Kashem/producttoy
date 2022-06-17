@@ -1,11 +1,11 @@
-if (document.getElementById("sortBy") != null) {
-  document.querySelector("#sortBy").addEventListener("change", function (e) {
-    var url = new URL(window.location.href);
-    url.searchParams.set("sort_by", e.currentTarget.value);
+// if (document.getElementById("sortBy") != null) {
+//   document.querySelector("#sortBy").addEventListener("change", function (e) {
+//     var url = new URL(window.location.href);
+//     url.searchParams.set("sort_by", e.currentTarget.value);
 
-    window.location = url.href;
-  });
-}
+//     window.location = url.href;
+//   });
+// }
 
 // For Province Loaded
 
@@ -74,23 +74,23 @@ if (localeItems.length > 0) {
 
 // For Product API Modal
 
-// var productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
+var productInfoAnchor = document.querySelectorAll("#productInfoAnchor");
 
-// var productModal = "";
+var productModal = "";
 
-// if (document.getElementById("productInfoModal") != null) {
-//   productModal = new bootstrap.Modal(
-//     document.getElementById("productInfoModal"),
-//     {}
-//   );
-// }
+if (document.getElementById("productInfoModal") != null) {
+  productModal = new bootstrap.Modal(
+    document.getElementById("productInfoModal"),
+    {}
+  );
+}
 
 
-// if (productInfoAnchor.length > 0) {
-//   productInfoAnchor.forEach((item) => {
-//     item.addEventListener("click", (event) => {
-//       console.log("I clicked this image");
-//       productModal.show();
-//     });
-//   });
-// } 
+if (productInfoAnchor.length > 0) {
+  productInfoAnchor.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      console.log("I clicked this image");
+      productModal.show();
+    });
+  });
+} 
