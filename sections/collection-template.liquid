@@ -74,7 +74,7 @@
                 <div class="col-3 g-2">
                     <div class="card">
                         {%- if image != blank -%}
-                            <a href="" id="productInfoAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | money_without_trailing_zeros }}">
+                            <a href="#" id="productInfoAnchor" product-handle="{{ product.handle }}" product-price="{{ product.price | money_without_trailing_zeros }}">
                                 <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
                             </a>
                         {%- else -%}
