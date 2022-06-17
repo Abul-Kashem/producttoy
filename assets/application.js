@@ -76,4 +76,12 @@ if (localeItems.length > 0) {
 
 var productInfoAnchors = document.querySelectorAll("productInfoAnchor");
 
-console.log(productInfoAnchors);
+// console.log(productInfoAnchors);
+
+if (productInfoAnchors.length > 0) {
+  productInfoAnchors.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      console.log("Image anchor clicked");
+    });
+  });
+}
