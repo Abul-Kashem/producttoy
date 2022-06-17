@@ -74,4 +74,6 @@ if (localeItems.length > 0) {
 
 // For Product API Modal
 
+var productInfoAnchors = document.querySelectorAll("productInfoAnchor");
 
+console.log(productInfoAnchors);
