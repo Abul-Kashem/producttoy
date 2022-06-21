@@ -108,7 +108,10 @@ if(productInfoAnchors.length > 0) {
                 document.getElementById("productInfoImg").src = data.images[0];
                 document.getElementById("productInfoTitle").innerHTML = data.title;
                 document.getElementById("productInfoPrice").innerHTML = item.getAttribute('product-price');
-                document.getElementById("productInfoDescription").innerHTML = data.description;
+                var length = 700;
+                var myString = data.description;
+                var myTruncatedString = myString.substring(0,length) + "...";
+                document.getElementById("productInfoDescription").innerHTML = myTruncatedString;//data.description;
 
                 var variants = data.variants;
                 var variantSelect = document.getElementById("modalItemID");
