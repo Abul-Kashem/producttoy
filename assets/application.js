@@ -176,8 +176,8 @@ function update_cart() {
     .then((resp) => resp.json())
     .then(
       (data) =>
-        (document.getElementById("numberOfCartItems").innerHTML =
-          data.items.length)
+      (document.getElementById("numberOfCartItems").innerHTML =
+        data.items.length)
     )
     .catch((err) => console.error(err));
 }
