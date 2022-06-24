@@ -111,6 +111,10 @@ body {}
     z-index: -1;
 }
 
+.card-image{ 
+    height: 100%; 
+}
+
 .card a{
     text-decoration: none;
 }
